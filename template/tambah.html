@@ -1,0 +1,90 @@
+<html> 
+    <head>   
+        <title>Tambah Mahasiswa - UDB</title> 
+        <style type="text/css">
+            [type="date"] {
+              background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+            }
+            [type="date"]::-webkit-inner-spin-button {
+              display: none;
+            }
+            [type="date"]::-webkit-calendar-picker-indicator {
+              opacity: 0;
+            }
+
+            /* custom styles */
+            body {
+              padding: 4em;
+              background: #e5e5e5;
+              font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+            }
+            label {
+              display: block;
+            }
+            input {
+              border: 1px solid #c4c4c4;
+              border-radius: 5px;
+              background-color: #fff;
+              padding: 3px 5px;
+              box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+              width: 190px;
+            }
+
+            .button-green {
+                 background-color: #4CAF50; /* Green */
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+            }
+
+            .button-blue {
+                 background-color: #008CBA; /* Green */
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+            }
+
+            .button-red {
+                 background-color: #f44336; /* Green */
+                  border: none;
+                  color: white;
+                  padding: 15px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+            }
+
+            .batal{
+                  color: #111; 
+                  font-family: 'Helvetica Neue', sans-serif; 
+                  font-size: 18px; 
+                  font-weight: bold; 
+                  letter-spacing: -1px; 
+                  line-height: 1;
+            }
+
+        </style>
+    </head> 
+    <body>   
+        <h2><center><font color="blue">TAMBAH TASK</font></center></h2>   
+        <center/><a href="/" class="batal">&#8617; Batal</a>   
+        <hr><br/>
+        <form method="POST" action="/tambah" align="center">
+            <label>Nomor <br><input name="nim" type="text" value=""></label><br>       
+            <label><br>Task Detail <br><input name="Task_detail" type="text" value=""></label><br>       
+            <label><br>Assignee <br><input name="Assignee" type="text" value=""></label><br>       
+            <label><br>Deadline <br><input name="Deadline" id="dateofbirth" type="date" value=""></label><br><br/>      
+            <input type="submit" class="button-green" value="Tambah" />
+        </form> 
+ 
+</body> 
+</html>
